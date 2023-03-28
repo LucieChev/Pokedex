@@ -15,7 +15,7 @@ function PokemonCard() {
     return (
         <div>
             <figure>
-                {pokemon === pokemonList[0] ? <img src={pokemon.imgSrc} alt={pokemon.name} /> : <p>???</p>}
+                {pokemon.imgSrc === undefined ? <p>???</p> : <img src={pokemon.imgSrc} alt={pokemon.name} />}
 
                 <figcaption>{pokemon.name}</figcaption>
             </figure>
