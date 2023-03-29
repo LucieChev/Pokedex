@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+import styles from './PokemonCard.module.css';
 
 function PokemonCard({ pokemon }) {
     return (
         <div>
-            <figure>
-                {pokemon.imgSrc === undefined ? <p>???</p> : <img src={pokemon.imgSrc} alt={pokemon.name} />}
+            <figure className={styles.card}>
+                {pokemon.imgSrc === undefined ? <p>???</p> : <img src={pokemon.imgSrc} alt={pokemon.name} className={styles.cardImg} />}
 
                 <figcaption>{pokemon.name}</figcaption>
             </figure>
