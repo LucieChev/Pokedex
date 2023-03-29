@@ -1,7 +1,7 @@
 import PokemonCard from './components/PokemonCard';
 import { useState } from "react";
 import NavBar from './components/Navbar';
-import './App.css';
+import './App.css'
 
 function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
